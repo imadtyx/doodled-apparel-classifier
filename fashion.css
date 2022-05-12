@@ -1,0 +1,89 @@
+/* fashio/ */
+h1{
+    text-align:center;
+    font-family: 'Alegreya Sans SC';
+    color: #34495e;
+}
+
+.fashion1 {
+  background-color: white;
+  color: #34495e;
+  border: 2px solid #34495e;
+  position:absolute;
+  top:600;
+  left:100;
+  width:13.4%;
+  transition-duration: 0.4s;
+}
+
+.fashion1:hover {
+  background-color: #34495e; /* Green */
+  color: white;
+
+}
+
+.fashion2 {
+  background-color: white;
+  color: #34495e;
+  border: 2px solid #34495e;
+  position:absolute;
+  top:600;
+  left:290;
+  width:13.4%;
+  transition-duration: 0.4s;
+}
+
+.fashion2:hover {
+  background-color: #34495e; /* Green */
+  color: white;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body{
+/*  padding: 40px;*/
+  background-color: #fff;  
+  letter-spacing: 6px; 
+  font-size:30px; 
+}
+
+p {
+  border-right: solid 3px #34495e;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Waiting for the Sunrise', cursive;  
+  font-size: 28px;
+  color: #34495e;
+  font-weight: bold;
+    
+  text-align:center;
+  
+  transform: translate(-50%, -50%);
+  position:fixed;
+  top:50%;
+  left: 65%;
+ 
+}
+
+/* Animation */
+p {
+  animation: animated-text 7s steps(15,end) 1s 1 normal both,
+             animated-cursor 7s steps(15, end) 1s 1 normal both;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  0%{width: 0px;}
+  35%{width: 572px;}
+  65%{width: 572px;}
+  100%{width: 0px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: #34495e;}
+  99%{border-right-color: #34495e;}
+  to{border-right-color: transparent;}
+}
